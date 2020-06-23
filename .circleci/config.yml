@@ -7,13 +7,13 @@ jobs:
       - image: cimg/base:2020.01
     steps:
       - checkout
-      - run: my-command
+      - run: echo "build"
   test:
     docker:
       - image: cimg/base:2020.01
     steps:
       - checkout
-      - run: my-command
+      - run: echo "test"
 
 # Orchestrate our job run sequence
 workflows:
