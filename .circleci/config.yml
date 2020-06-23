@@ -14,10 +14,26 @@ jobs:
     steps:
       - checkout
       - run: echo "test"
+  deploy:
+    docker:
+      - image: cimg/base:2020.01
+    steps:
+      - checkout
+      - run: echo "deploy"
 
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
     jobs:
       - build
-      - test
+      - test:
+          requires:
+            - build
+      - hold:
+          type: approval
+          requires:
+            - build
+      - deploy:
+          requires:
+            - hold
+          
