@@ -1,4 +1,4 @@
-[![rosieyohannan](https://circleci.com/gh/rosieyohannan/sample-config-cci.svg?style=svg)](https://circleci.com/gh/rosieyohannan/sample-config-cci)
+[![rosieyohannan](https://circleci.com/gh/rosieyohannan/sample-config-cci/tree/approval.svg?style=svg)](https://circleci.com/gh/rosieyohannan/sample-config-cci/tree/approval)
 
 
 # sample-config-cci
