@@ -1,6 +1,6 @@
 version: 2.1
 
-executors:
+executors: # use one executor for all jobs
   my-executor:
     docker:
       - image: cimg/base:2024.01
