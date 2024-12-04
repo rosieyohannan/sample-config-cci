@@ -14,8 +14,8 @@ jobs:
     steps:
       - checkout
       - run: echo "test"
-      - run: circleci tests run --help
       - run: circleci tests split --help
+      - run: circleci tests run --help
 
 # Orchestrate our job run sequence
 workflows:
